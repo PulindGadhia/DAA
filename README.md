@@ -1,10 +1,12 @@
 # Design and Analysis of Algorithms (DAA)
 
-This repository contains the C++ implementations of sorting algorithms performed during DAA practical sessions.
+This repository contains my C++ implementations of the practicals performed for the **Design and Analysis of Algorithms (DAA)** course.
 
-## Practical 1
+## Practicals
 
-### Sorting Algorithms
+### Practical 1 - Sorting Algorithms
+
+Implementation of:
 
 - Bubble Sort
 - Selection Sort
@@ -12,15 +14,53 @@ This repository contains the C++ implementations of sorting algorithms performed
 - Merge Sort
 - Quick Sort
 
-## Language
+📁 **Folder:** `Practical 1/`
+
+### Practical 2 - Searching Algorithms
+
+Implementation of:
+
+- Linear Search
+- Binary Search
+
+📄 **File:** `Practical 2.cpp`
+
+### Practical 4 - Factorial
+
+Implementation of factorial using:
+
+- Iterative Method
+- Recursive Method
+- Time Complexity Analysis
+- Space Complexity Analysis
+
+📄 **File:** `Practical 4.cpp`
+
+## Technologies Used
 
 - C++
-
-## Compiler
-
 - GCC / G++
 - Visual Studio Code
 
-## Author
+## Concepts Covered
 
-Pulind Gadhia
+- Sorting Algorithms
+- Searching Algorithms
+- Recursion
+- Iteration
+- Time Complexity
+- Space Complexity
+- Algorithm Analysis
+
+## Repository Structure
+
+```text
+DAA/
+│
+├── Practical 1/
+│   └── Sorting Algorithms
+│
+├── Practical 2.cpp
+├── Practical 4.cpp
+│
+└── README.md
