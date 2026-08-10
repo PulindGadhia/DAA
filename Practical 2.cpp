@@ -1,14 +1,13 @@
 #include <iostream>
-#include <vector>
 #include <chrono>
 
 using namespace std;
 using namespace chrono;
 
 // Linear Search
-int linearSearch(vector<int> a, int key)
+int linearSearch(int a[], int n, int key)
 {
-    for (int i = 0; i < a.size(); i++)
+    for (int i = 0; i < n; i++)
     {
         if (a[i] == key)
             return i;
@@ -18,10 +17,10 @@ int linearSearch(vector<int> a, int key)
 }
 
 // Binary Search
-int binarySearch(vector<int> a, int key)
+int binarySearch(int a[], int n, int key)
 {
     int low = 0;
-    int high = a.size() - 1;
+    int high = n - 1;
 
     while (low <= high)
     {
@@ -42,14 +41,11 @@ int binarySearch(vector<int> a, int key)
 int main()
 {
     int n = 100000;
-
-    vector<int> a(n);
+    int a[n];
 
     // Create sorted array
     for (int i = 0; i < n; i++)
-    {
         a[i] = i + 1;
-    }
 
     int key;
 
@@ -59,7 +55,7 @@ int main()
     // Linear Search
     auto start = high_resolution_clock::now();
 
-    int result = linearSearch(a, key);
+    int result = linearSearch(a, n, key);
 
     auto end = high_resolution_clock::now();
 
@@ -78,7 +74,7 @@ int main()
     // Binary Search
     start = high_resolution_clock::now();
 
-    result = binarySearch(a, key);
+    result = binarySearch(a, n, key);
 
     end = high_resolution_clock::now();
 
